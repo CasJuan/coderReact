@@ -1,15 +1,14 @@
 import './App.css'
-import ItemListContainer from './components/ItemListContainer';
 import  Navbar  from "./components/Navbar";
+import ItemListContainer from './components/ItemListContainer';
+
 
 function App() {
   
-  const titulo = "Bienvenido a El Faro, tu agencia de viajes";
-
   return (
     <>
         <Navbar/>
-        <ItemListContainer titulo={titulo}/>
+        <ItemListContainer msj={'Bienvenidos a El Faro, tu agencia de viajes'} />
     </>
   )
 }
