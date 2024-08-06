@@ -1,7 +1,7 @@
-export const genero = ['Hombre', 'Mujer'];
+export const categories = ['Female', 'Male'];
 
 
-export const personajes = [
+export const items = [
     {
     "id": 1,
     "name": "Rick Sanchez",
