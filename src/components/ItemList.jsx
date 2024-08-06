@@ -1,15 +1,21 @@
 /* eslint-disable react/prop-types */
 import Item from "./Iteam";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const ItemList = ({ products }) => {
   
     return (
     <>
-      <div className={``}>
+        <Container>
+          <Row>
         {products.map((product) => {
-          return <Item key={product.id} product={product} />;
+          // eslint-disable-next-line react/jsx-key
+          return <Col> <Item key={product.id} product={product} /> </Col>;
         })}
-      </div>
+          </Row>
+        </Container>
     </>
   );
 };

@@ -7,7 +7,7 @@ const ItemDetail = ({product}) => {
     const {name,image,gender,species,status} = product
 
     return (
-      <Card className="text-center">
+      <Card className="text-center m-2" style={{ width: '18rem' }}>
         <Card.Header>{gender}</Card.Header>
         <Card.Img variant="top" src={image} />
         <Card.Body>
