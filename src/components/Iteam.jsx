@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 const Item = ({ product }) => {
-  product.isStar = true
   return (
     <Card style={{ width: '10rem' }} className='m-2'>
       <Card.Img variant="top" src={product.image} />

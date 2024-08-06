@@ -3,8 +3,8 @@ import './App.css'
 import ItemListContainer from './components/ItemListContainer'; */
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/pages/Layout';
-import ItemDetail from './components/ItemDetail/IteamDetail'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/IteamDetailcontainer';
 import Error404 from './components/Error404/Error404';
 
 
@@ -18,7 +18,7 @@ function App() {
         <Routes>
         <Route path="/" element={<ItemListContainer  />} />
             <Route path="/category/:categoryId" element={<ItemListContainer/>} />
-            <Route path="/product/:id" element={<ItemDetail />} />
+            <Route path="/product/:id" element={<ItemDetailContainer />} />
             <Route path="*" element={<Error404 />} />
         </Routes>
       </Layout>

@@ -31,7 +31,7 @@ export const getProductById = (id) => {
       } else {
         reject("No se encontro el producto");
       }
-    }, 1000);
+    }, 1500);
   });
 }
 

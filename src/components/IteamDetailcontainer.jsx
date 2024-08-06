@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import {getProductById} from '../../utils/fetchData';
+import {getProductById} from '../utils/getProducts';
 import ItemDetail from '../ItemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
           <div>ItemDetailContainer</div>
           { loading 
             ? console.log('no responde')
-            : <ItemDetail {...product}  />}
+            : <ItemDetail product={product}  />}
 
       </main>
     )

@@ -1,22 +1,40 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const ItemDetail = ({name, description, price, image}) => {   
+const ItemDetail = ({product}) => {   
+
+    const {name,image,gender,species,status} = product
+
     return (
       <Card className="text-center">
-        <Card.Header>{name}</Card.Header>
+        <Card.Header>{gender}</Card.Header>
         <Card.Img variant="top" src={image} />
         <Card.Body>
-          <Card.Title>${price}</Card.Title>
+          <Card.Title>{name}</Card.Title>
           <Card.Text>
-            {description}
+            {species} {status}
           </Card.Text>
-          <Button variant="primary">Comprar</Button>
         </Card.Body>
       </Card>    
   )
 }
 
 export default ItemDetail;
+
+/* "id": 1,
+    "name": "Rick Sanchez",
+    "status": "Alive",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+    "name": "Earth (C-137)",
+    "url": "https://rickandmortyapi.com/api/location/1"
+    },
+    "location": {
+    "name": "Citadel of Ricks",
+    "url": "https://rickandmortyapi.com/api/location/3"
+    },
+    "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+    "episode": [ */
