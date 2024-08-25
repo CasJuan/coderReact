@@ -9,7 +9,8 @@ const Item = ({ product }) => {
       <Card.Img variant="top" src={product.image} />
       <Card.Body>
         <Card.Title>{product.name}</Card.Title>
-        <Card.Text>{product.gender}</Card.Text>
+        <Card.Text>{product.description}</Card.Text>
+        <Card.Text>${product.price}</Card.Text>
         <Link to={`/product/${product.id}`} >
           <Button variant="primary">Details</Button>
         </Link>

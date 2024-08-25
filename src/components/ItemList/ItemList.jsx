@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Item from "./Iteam";
+import Item from "../Item/Iteam";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

@@ -1,4 +1,4 @@
-import { items } from "../mock/mockData";
+import { items } from "../mock/guitarras";
 
 
 export const getProductById = (id) => {

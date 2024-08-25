@@ -1,8 +1,10 @@
-export const db = [
+export const categories = ['Red', 'Other','Yellow'];
+
+export const items = [
     {
         id: 1,
         name: 'Lukather',
-        image: 'guitarra_01',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/xmakhsd1ryvypew9ooz2.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 299,
         color:'Red'
@@ -10,7 +12,7 @@ export const db = [
     {
         id: 2,
         name: 'SRV',
-        image: 'guitarra_02',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/rfotpreik2fbia6pp5dv.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 349,
         color:'Red'
@@ -18,7 +20,7 @@ export const db = [
     {
         id: 3,
         name: 'Borland',
-        image: 'guitarra_03',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/uhc4hyv5aieluwegb6sl.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 329,
         color:'Other'
@@ -26,7 +28,7 @@ export const db = [
     {
         id: 4,
         name: 'VAI',
-        image: 'guitarra_04',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/khmxfqb88m37akxhtbry.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 299,
         color:'Yellow'
@@ -34,7 +36,7 @@ export const db = [
     {
         id: 5,
         name: 'Thompson',
-        image: 'guitarra_05',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/y5ft5uskpmuaolug2p0p.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 399,
         color:'Other'
@@ -42,7 +44,7 @@ export const db = [
     {
         id: 6,
         name: 'White',
-        image: 'guitarra_06',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/i8fft2wcjhvsp312rezk.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 329,
         color:'Red'
@@ -50,7 +52,7 @@ export const db = [
     {
         id: 7,
         name: 'Cobain',
-        image: 'guitarra_07',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/rxukxu15cclnob6a1az8.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 349,
         color:'Red'
@@ -58,7 +60,7 @@ export const db = [
     {
         id: 8,
         name: 'Dale',
-        image: 'guitarra_08',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/e7psajopwlzre96l7lzb.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 379,
         color:'Red'
@@ -66,7 +68,7 @@ export const db = [
     {
         id: 9,
         name: 'Krieger',
-        image: 'guitarra_09',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/hzefc2pbg4azcasfb0un.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 289,
         color:'Yellow'
@@ -74,7 +76,7 @@ export const db = [
     {
         id: 10,
         name: 'Campbell',
-        image: 'guitarra_10',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/ftjvp9ypq5cnkzdprz3e.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 349,
         color:'Red'
@@ -82,7 +84,7 @@ export const db = [
     {
         id: 11,
         name: 'Reed',
-        image: 'guitarra_11',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/dfutqjslx3csgfbjcvub.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 399,
         color:'Yellow'
@@ -90,7 +92,7 @@ export const db = [
     {
         id: 12,
         name: 'Hazel',
-        image: 'guitarra_12',
+        image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/prvzddnwhl3abqebv5xs.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 379,
         color:'Other'

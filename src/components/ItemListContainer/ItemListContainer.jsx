@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import ItemList from "../ItemList";
+import ItemList from "../ItemList/ItemList";
 import { getProducts } from "../../utils/fetchData";
 import { useParams } from "react-router-dom";
 

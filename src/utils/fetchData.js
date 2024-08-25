@@ -1,4 +1,4 @@
-import { items } from "../mock/mockData";
+import { items } from "../mock/guitarras";
 
 
 export const getProducts = (category) => {
@@ -7,7 +7,7 @@ export const getProducts = (category) => {
 
   if (category) {
     filteredItems = items.filter((item) =>
-      item.gender.includes(category)
+      item.color.includes(category)
     );
   }
 
