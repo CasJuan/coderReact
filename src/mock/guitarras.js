@@ -7,7 +7,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/xmakhsd1ryvypew9ooz2.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 299,
-        color:'Red'
+        color:'Red',
+        stock:11
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/rfotpreik2fbia6pp5dv.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 349,
-        color:'Red'
+        color:'Red',
+        stock:13
     },
     {
         id: 3,
@@ -23,7 +25,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/uhc4hyv5aieluwegb6sl.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 329,
-        color:'Other'
+        color:'Other',
+        stock:15
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/khmxfqb88m37akxhtbry.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 299,
-        color:'Yellow'
+        color:'Yellow',
+        stock:5
     },
     {
         id: 5,
@@ -39,7 +43,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/y5ft5uskpmuaolug2p0p.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 399,
-        color:'Other'
+        color:'Other',
+        stock:9
     },
     {
         id: 6,
@@ -47,7 +52,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/i8fft2wcjhvsp312rezk.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 329,
-        color:'Red'
+        color:'Red',
+        stock:11
     },
     {
         id: 7,
@@ -55,7 +61,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/rxukxu15cclnob6a1az8.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 349,
-        color:'Red'
+        color:'Red',
+        stock:7
     },
     {
         id: 8,
@@ -63,7 +70,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/e7psajopwlzre96l7lzb.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 379,
-        color:'Red'
+        color:'Red',
+        stock:4
     },
     {
         id: 9,
@@ -71,7 +79,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/hzefc2pbg4azcasfb0un.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 289,
-        color:'Yellow'
+        color:'Yellow',
+        stock:3
     },
     {
         id: 10,
@@ -79,7 +88,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/ftjvp9ypq5cnkzdprz3e.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 349,
-        color:'Red'
+        color:'Red',
+        stock:14
     },
     {
         id: 11,
@@ -87,7 +97,8 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562534/dfutqjslx3csgfbjcvub.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 399,
-        color:'Yellow'
+        color:'Yellow',
+        stock:11
     },
     {
         id: 12,
@@ -95,6 +106,7 @@ export const items = [
         image: 'https://res.cloudinary.com/diqowr6go/image/upload/v1724562533/prvzddnwhl3abqebv5xs.jpg',
         description: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
         price: 379,
-        color:'Other'
+        color:'Other',
+        stock:17
     },
   ]
