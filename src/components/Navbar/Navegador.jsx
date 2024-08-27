@@ -12,15 +12,21 @@ const Navegador = () => {
     <>
       <Navbar bg="dark" data-bs-theme="dark" className='navegador'>
         <Container>
-          <Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
             <Link to="/">
-            <img src={logo} />
             Guitarr Hero
             </Link>
           </Navbar.Brand>
           <Nav className="me-auto">
             {categories.map((element, index) => {
-              return <NavbarLink key={index} category={element}/>
+              return <NavbarLink  key={index} category={element}/>
             })}
           </Nav>
         </Container>

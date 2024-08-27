@@ -4,10 +4,7 @@ import ItemList from "../ItemList/ItemList";
 import { getProducts } from "../../utils/fetchData";
 import { useParams } from "react-router-dom";
 
-
-
-
-const ItemListContainer = ({ title, otroTitle }) => {
+const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
   const [loading, setLoading] = useState(true);
@@ -36,12 +33,7 @@ const ItemListContainer = ({ title, otroTitle }) => {
 
   }, [categoryId]);
 
-  let titleToShow;
-  if (title != undefined) {
-    titleToShow = title;
-  } else {
-    titleToShow = otroTitle;
-  }
+  let titleToShow = "";
   
   return (
         <main >

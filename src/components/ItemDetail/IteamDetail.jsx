@@ -1,10 +1,18 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import Card from 'react-bootstrap/Card';
+import ItemCount from '../ItemCount/ItemCount'
+import { useCartContex } from '../Context/CartContext';
 
-const ItemDetail = ({product}) => {   
+const ItemDetail = ({id,name,image,description,price,stock}) => {   
 
-    const {name,image,description,price} = product
+    const {addToCart} = useCartContex();
+
+    const handleOnBuy = (qty) => {
+      console.log(`Se agregaron ${qty}`)
+      const item = {id, name,description,price};
+      addToCart(item, qty);
+    }
 
     return (
       <Card className="text-center m-2" style={{ width: '18rem' }}>
@@ -15,6 +23,7 @@ const ItemDetail = ({product}) => {
           <Card.Text>
             {price}
           </Card.Text>
+          <ItemCount stock={stock} initial = {1} handleOnBuy={handleOnBuy} />
         </Card.Body>
       </Card>    
   )
