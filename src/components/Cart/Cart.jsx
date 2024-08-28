@@ -5,12 +5,16 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import { useState } from 'react';
+import { addDoc, collection } from 'firebase/firestore';
+import { db } from '../Firebase/dbConection';
 
 
 
 const Cart = () => {
 
   const {cart, total, removeItem, clearCart} = useCartContex();
+  const [formData, setFromData] = useState({naem:"", tel:"", email:""});
 
   const handleRemoveItem = (id, price, qty) => {
     removeItem(id,price,qty);
@@ -28,6 +32,25 @@ const Cart = () => {
     console.log("Saving in Database")
     console.log("formData", formData)
     console.log("cart". cart)
+
+    const orderCollectio = collection(db, "orders")
+    const newOrder = {
+      buyer:formData,
+      items:cart,
+      date:new Date(),
+      total: total
+    }
+
+    addDoc(orderCollectio, newOrder)
+      .then((doc) => {
+        alert("Orden registrada" + doc.id)
+        console.log("Orden registrada" + doc.id)
+        clearCart();
+        setFromData({name:"",tel:"",email:""})
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
 
 
