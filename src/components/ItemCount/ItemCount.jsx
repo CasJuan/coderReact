@@ -46,6 +46,7 @@ const ItemCount = ({ stock, initial, handleOnBuy }) => {
         <Button variant="primary" onClick={handleGoToCheckout}>Checkout</Button>
     ) : (
         <>
+        <span>{qty}</span>
         <ButtonGroup aria-label="Basic example">
           <Button variant="secondary" onClick={() => handleClick}>-</Button>
           <Button variant="secondary">{qty}</Button>

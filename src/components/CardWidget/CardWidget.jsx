@@ -1,7 +1,7 @@
-import cart from './img/cart.svg'
-import { useCartContex } from './Context/CartContext'
+import { useCartContex } from '../Context/CartContext';
+import cart from '../img/cart.svg'
 
-export const CardWidget = () => {
+const CardWidget = () => {
 
   const {qtyItems} = useCartContex();
 
@@ -12,3 +12,5 @@ export const CardWidget = () => {
     </div>
   )
 }
+
+export default CardWidget;

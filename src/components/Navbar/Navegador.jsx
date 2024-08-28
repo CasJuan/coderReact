@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import { categories } from "../../mock/guitarras";
 import NavbarLink from './NavbarLink';
 import logo from '../img/klipartz.com.png'
+import CardWidget from '../CardWidget/CardWidget';
+
+
 
 
 const Navegador = () => {
@@ -28,9 +31,12 @@ const Navegador = () => {
             {categories.map((element, index) => {
               return <NavbarLink  key={index} category={element}/>
             })}
+            <CardWidget/>
           </Nav>
         </Container>
       </Navbar>
+
+
     </>
   )
 }

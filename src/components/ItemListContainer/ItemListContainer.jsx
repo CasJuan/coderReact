@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
-import { getProducts } from "../../utils/fetchData";
 import { useParams } from "react-router-dom";
+import {db} from "../Firebase/dbConection";
+import { collection, getDocs, query, where} from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
@@ -10,35 +11,34 @@ const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log("Se termino de montar el componente");
     setLoading(true);
-    getProducts(categoryId) 
-      .then((res) => {
-        console.log("Se resolvio la promesa");
-        setProducts(res);
-        console.log("Se actualizaron los productos");
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {
-        console.log("finalizo la promesa");
-        setLoading(false);
-      });
+    
+    let productsCollection = collection(db, "productos")
 
-
-      return () => {
-        console.log("Se desmonto el componente");
-      }
-
+    if (categoryId) {
+      productsCollection = query(productsCollection, where("category", "array-contains", categoryId));
+    }
+   
+    
+    getDocs(productsCollection)
+    .then(({docs}) => {
+      const prodFromDocs = docs.map((doc)=>({
+        id: doc.id,
+        ...doc.data()
+      }))
+      setProducts(prodFromDocs)
+      setLoading(false);
+    })
+    .catch((error) => {
+      console.error("Error getting documents: ", error);
+    });
+ 
   }, [categoryId]);
 
-  let titleToShow = "";
-  
+
   return (
         <main >
           {console.log("Renderizo el componente")}
-            <div>{titleToShow}</div>
             { loading 
               ? console.log('no carga')
               : <ItemList products={products} />}
