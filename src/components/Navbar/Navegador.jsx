@@ -29,7 +29,7 @@ const Navegador = () => {
           </Navbar.Brand>
           <Nav className="me-auto">
             {categories.map((element, index) => {
-              return <NavbarLink  key={index} category={element}/>
+              return <NavbarLink  key={index} color={element}/>
             })}
             <CardWidget/>
           </Nav>

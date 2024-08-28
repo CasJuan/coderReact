@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 
 // eslint-disable-next-line react/prop-types
-const NavbarLink = ({category}) => {
+const NavbarLink = ({color}) => {
   return (
     <>
-    <NavLink to={`/category/${category}`} className="navItem">
-      {category}
+    <NavLink to={`/category/${color}`} className="navItem">
+      {color}
     </NavLink>
     </>
   )

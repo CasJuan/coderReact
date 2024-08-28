@@ -12,7 +12,6 @@ import Cart from './components/Cart/Cart';
 
 
 function App() {
-  console.log("NO ENTIENDO PORQUE NO ME TRAE LA CLAVEEE", import.meta.env.VITE_API_KEY)
   return (
     <>
     <CartContextProvider>
@@ -20,7 +19,7 @@ function App() {
       <Layout>
         <Routes>
         <Route path="/" element={<ItemListContainer  />} />
-            <Route path="/category/:categoryId" element={<ItemListContainer/>} />
+            <Route path="/color/:categoryId" element={<ItemListContainer/>} />
             <Route path="/product/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<Error404 />} />
