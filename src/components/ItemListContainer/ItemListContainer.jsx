@@ -16,10 +16,9 @@ const ItemListContainer = () => {
     let productsCollection = collection(db, "productos")
 
     if (categoryId) {
-      productsCollection = query(productsCollection, where("category", "array-contains", categoryId));
+      productsCollection = query(productsCollection, where("color", categoryId));
     }
    
-    
     getDocs(productsCollection)
     .then(({docs}) => {
       const prodFromDocs = docs.map((doc)=>({

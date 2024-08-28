@@ -1,5 +1,5 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+
 import Card from 'react-bootstrap/Card';
 import ItemCount from '../ItemCount/ItemCount'
 import { useCartContex } from '../Context/CartContext';
@@ -23,8 +23,9 @@ const ItemDetail = ({id,name,image,description,price,stock}) => {
           <Card.Text>
             {price}
           </Card.Text>
-          <ItemCount stock={stock} initial = {1} handleOnBuy={handleOnBuy} />
+          <ItemCount stock={stock} initial={1} handleOnBuy={handleOnBuy}/>
         </Card.Body>
+        <Card.Footer className="text-muted">solo quedan {stock}</Card.Footer>
       </Card>    
   )
 }

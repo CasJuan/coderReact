@@ -12,7 +12,7 @@ import Cart from './components/Cart/Cart';
 
 
 function App() {
-  
+  console.log("NO ENTIENDO PORQUE NO ME TRAE LA CLAVEEE", import.meta.env.VITE_API_KEY)
   return (
     <>
     <CartContextProvider>
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

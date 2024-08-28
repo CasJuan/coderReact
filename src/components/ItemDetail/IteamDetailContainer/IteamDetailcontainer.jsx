@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import ItemDetail from '../IteamDetail';
+import ItemDetail from '../ItemDetail';
 import {db} from '../../Firebase/dbConection';
 import {collection, getDoc, doc} from "firebase/firestore";
 
@@ -21,6 +21,7 @@ const ItemDetailContainer = () => {
             setLoading(false);
           })
           .catch((error)=>{
+            setLoading(false);
             console.log('ERROR',error);
           })
     },[id])
